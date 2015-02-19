@@ -1,0 +1,27 @@
+How did viewing a diff between two versions of a file help you see the bug that was introduced?
+
+Using FC on Windows to see the differences between two versions of a file helped me because it narrowed down the lines of code I had to check for errors. I had to scan through ten or twenty lines of code for impactful changes rather than through a thousand lines of code. Using FC highlighted all the lines that had changed in a simple, easy-to-read mannder.
+
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term? 
+
+When troubleshooting code for bugs, it would be nice to know what changes were introduced and when. If a bug started to crop up around a given date, it would be great to see what changes were made on that date and how they might have created the bug. If many changes were made but only one or two versions were saved, it might be difficult to narrow down the specific change that led to the bug being introduced.
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google docs does?
+
+Manually choose to create a commit allows you to determine a logical stopping point for your coding and allows you to create logical divisions between one version of a file and the next version of a file. Of course, it is also useful to have automatically saved versions of a file because it means you are less likely to lose a great deal of work in the event of a crash, etc. Manual commits are likely to be fewer in number and with easier to track changes.
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+
+Tracking multiple files together in one committ allows a developer to track changes that are interrelated across multiple files. This is important when one file references another. When files are unrelated to one another and changes in one do not impact another file, it's fine to treat each file individually.
+
+How can you use the commands git log and git diff to view the history of files?
+
+Git lot shows all the commits for a repository, with a note. Git diff allows you to compare two commits in a repository to determine the changes between one version of the commit and the second version of the commit.
+
+How might using version control make you more confident to make changes that could break something?
+
+Using version control makes breaking something easier to fix and revert. If you break something, you have tools to find when and how the break was introduced and you can easily fix things that are broken. It's a get out of jail free card for coding.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+I'd like to learn to code and probably start a few coding projects. I'd like to use Git to help me learn version control and likely javascript, Java or some other coding language. I'd like to change my home directory for one. I'd like to bold my command prompt to make it stand out a little more. I'm sure I'd like to change the colors to orange for my user name or some such bright color. I'll likely Google that next.
