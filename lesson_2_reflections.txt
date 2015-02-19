@@ -6,3 +6,10 @@ How is the staging area different from the working directory and the repository?
 
 The staging area can contain a subset of files from the working directory. It can contain all the files in the working directory but it doesn't have to do so. The staging area allows you to pick and choose which files you want to commit and when while leaving other files in the working directory untouched.
 
+How can you use the staging area to make sure you have one commit per logical change?
+
+Adding one file at at time to the staging area and running git status should allow you to make sure you have only one logical change per commit. Any staged files that you do not want to commit can be removed using git reset. You can use git diff to compare the contents of the working directory to the staging area. You can use git --staged to compare the staging area to the latest commit. Git reset --hard will eliminate all changes in the staging area and the working directory.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+Using branches can help if you want to keep two copies of a repository with essentially the same functionality but with some minor differences. For example, if you wanted to keep one version of the repository or project in English and another in Spanish. Or if you wanted to create a copy with different design elements to compare against the other. Branches allow keeping different variants of a repository with different features, etc. 
