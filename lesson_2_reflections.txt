@@ -13,3 +13,16 @@ Adding one file at at time to the staging area and running git status should all
 What are some situations when branches would be helpful in keeping your history organized? How would branches help?
 
 Using branches can help if you want to keep two copies of a repository with essentially the same functionality but with some minor differences. For example, if you wanted to keep one version of the repository or project in English and another in Spanish. Or if you wanted to create a copy with different design elements to compare against the other. Branches allow keeping different variants of a repository with different features, etc. 
+
+How do the diagrams help you visualize the branch structure?
+
+Diagraming the branch structure of a respository can help identify orphaned commits or possible orphaned commits. Those diagrams will also show the last commit several branches have in common and show changes made along various branches. 
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+Merging the two branches brought the latest code from the two branches together into one branch, merging the files and the code changes. Since the new master branch represents all the commits from both branches, the new merged node is represented as bringing the two branches together. The non-master label is dropped but all the commits still exist. 
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+One pro of Git's automatic merging is that it allows two developers to work on the code at the same time, each adding new features and functionality while avoiding tedious combining of code when each is done. Git may not be smart enough, however, to determine which additions, deletions or changes need to be in the final version of the file, especially when there are conflicts between the new versions of the files. At least Git is smart enough to determine when there are conflicts and alarms appropriately.
+
